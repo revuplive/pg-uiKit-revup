@@ -56,13 +56,6 @@ const CustomLink = styled(Link).attrs((props) => ({
   mb: "6px",
 }))``;
 
-const LogoWrapper = styled.div`
-  position: relative;
-  height: 40px;
-  width: 100%;
-  max-width: 280px;
-`;
-
 const Footer: React.FC<FooterProps> = (props) => {
   // check if screen is in medium size or below
   const bPoints = useMatchBreakpoints();
@@ -77,9 +70,7 @@ const Footer: React.FC<FooterProps> = (props) => {
             maxWidth="260px"
             mb={isStacked ? "2rem" : "0"}
           >
-            <LogoWrapper>
-              <Logo width="100%" />
-            </LogoWrapper>
+            <Logo width="100%" />
             <Text
               as="p"
               textAlign={isStacked ? "center" : "left"}
